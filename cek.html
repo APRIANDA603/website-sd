@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Kelulusan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<section class="cek-page">
+    <div class="cek-box fade-in">
+        <h1>Cek Kelulusan</h1>
+        <input type="text" id="nisnCek" placeholder="Masukkan NISN Anda">
+        <button onclick="cekKelulusan()">Cek</button>
+
+        <div id="result" class="hidden">
+            <img id="-img" src="" alt="Graduation">
+            <h3 id="student-name"></h3>
+            <p id="student-school"></p>
+            <p id="student-status"></p>
+        </div>
+
+        <div id="error" class="hidden">
+            <p style="color: red;">NISN tidak ditemukan!</p>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
